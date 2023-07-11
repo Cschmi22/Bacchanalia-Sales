@@ -1,0 +1,44 @@
+﻿@model Bacchanalia_Sales.Models.AddProduct
+
+<h1>Add Product Sales</h1>
+<form method="post" action="Add" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">Week</label>
+        <input type="date" class="form-control" asp-for="Week" />
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Name</label>
+        <input type ="text" class="form-control" asp-for="Name"/>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Course</label>
+        <input type="text" class="form-control" asp-for="Course" />
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Monday Sales</label>
+        <input type="number" class="form-control" asp-for="MondaySales" />
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Tuesday Sales</label>
+        <input type="number" class="form-control" asp-for="TuesdaySales" />
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Wednesday Sales</label>
+        <input type="number" class="form-control" asp-for="WednesdaySales" />
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Thursday Sales</label>
+        <input type="number" class="form-control" asp-for="ThursdaySales" />
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Friday Sales</label>
+        <input type="number" class="form-control" asp-for="FridaySales" />
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Saturday Sales</label>
+        <input type="number" class="form-control" asp-for="SaturdaySales" />
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

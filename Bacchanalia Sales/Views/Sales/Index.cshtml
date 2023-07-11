@@ -1,0 +1,41 @@
+﻿@model List<Bacchanalia_Sales.Models.Domain.Product>
+
+@{
+}
+
+<h1>Weekly Sales</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Week</th>
+            <th>Name</th>
+            <th>Course</th>
+            <th>Monday Sales</th>
+            <th>Tuesday Sales</th>
+            <th>Wednesday Sales</th>
+            <th>Thursday Sales</th>
+            <th>Friday Sales</th>
+            <th>Saturday Sales</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var products in Model)
+        {
+            <tr>
+                <td>@products.Id</td>
+                <td>@products.Week</td>
+                <td>@products.Name</td>
+                <td>@products.Course</td>
+                <td>@products.MondaySales</td>
+                <td>@products.TuesdaySales</td>
+                <td>@products.WednesdaySales</td>
+                <td>@products.ThursdaySales</td>
+                <td>@products.FridaySales</td>
+                <td>@products.SaturdaySales</td>
+                <td><a href="Sales/View/@products.Id">View</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
